@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />   
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <title>Mapa</title>	
+
+</head>
+<body>
+<div id="contenedor">
+
+    <form action="#" id="formulario" >
+        <div id="container">
+                <div class="etiqueta">
+                        <label for="descripcion"> Descripción </label>
+                        <input id="descripcion" class="form" name="descripcion" type="text" >
+                        
+                </div>
+                <br>
+                <div class="etiqueta">
+                        <label for="direccion"> Dirección </label>
+                        <input id="direccion" class="form" name="direccion" type="text" >
+                    
+                </div>
+                    <br>
+               <div class="etiqueta">
+                    <label for="tel"> Teléfono </label>
+                    <input id="telefono" class="form" name="tel" type="text" >
+                   
+               </div>
+                <br>
+               <div class="etiqueta">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" class="form" id="categoria">
+                        <option value="" selected>Seleccionar valor</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="residencial">Residencial</option>
+                        <option value="mixta">Mixta</option>
+                    </select>
+                
+               </div>
+                <br>
+            
+            <div class="etiqueta">
+                <label class="text-coord"> Coordenadas </label>
+                <br>
+                <div id="contenedor-coord">
+                    <label for="coordenadas-x"> X</label>
+                    <input id="coordenadas-x" class="form" name="coordenadas-x">
+                    <label for="coordenadas-y"> Y</label>
+                    <input id="coordenadas-y" class="form" name="coordenadas-y">
+                </div>
+                </div>
+            <button type="submit">Agregar</button>
+
+        </div><!--Fin contenedor formulario-->
+
+    </form>
+
+        <div id="map"></div>
+
+</div>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
