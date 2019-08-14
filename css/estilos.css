@@ -41,6 +41,7 @@ div.etiqueta {
 div.etiqueta label{
     font-family: 'Blinker', sans-serif;
     color: #fff;
+    font-size: 1.1em;
 }
 input {
     border-radius:5px; 
